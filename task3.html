@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+           .main{ display: flex;
+                justify-content: center; }
+           .con{  display: flex;
+            justify-content: center;           
+
+           }
+          .card{ border: 2px solid black; 
+                height: 300px;
+                width: 200px;
+                border-radius: 10px; 
+                margin: 30px;
+                box-shadow: 5px 5px 1px 1px gray;
+                transition: all 1s;}
+            .box{border: 2px solid black; 
+                height: 300px;
+                width: 200px;
+                border-radius: 10px; 
+                margin: 30px;
+                box-shadow: 5px 5px 1px 1px gray;
+                transition: all 1s;
+                }
+        .card:hover{ box-shadow: 1px 1px 1px 1px gray;
+                  }
+                  .bg-black{background-color: black;}
+
+                  .bg-white{background-color: rgb(15, 107, 110); font-size: 40px;}
+
+                  .bg-bisque{background-color: bisque;}
+
+                  .text-red{color: red;}
+
+                  .text-blue{color: blue;}
+                   
+                  .text-green{color: green; 
+                              font-size: 40px;}
+                 
+                  
+
+              #a:hover{  transform: translate(-100px);}
+             #b:hover{ transform: translate(100px);}
+             #c:hover{  transform: translateY(100px);}
+             #d:hover{ transform: translateY(-100px);}
+             #e:hover{  transform: translate(100px,100px);}
+             #x:hover{ translate: translate(-100px,-100px);}
+             #y:hover{ transform: translate(-100px,100px);}
+             #z:hover{ transform: translate(100px,-100px);}
+    </style>
+</head>
+<body > 
+    
+    <div class="main">
+      <div class="card bg-black text-red" id="a">-x </div>
+      <div class="card bg-white text-green" id="b">x</div>
+      <div class="card bg-black text-blue" id="c">y</div>
+      <div class="card bg-white text-blue" id="d">-y</div>
+      <div class="card bg-white text-red" id="e">xy</div>    
+</div>
+    <div class="con">
+       <div class="box bg-bisque text-green" id="x">(-x)(-y)</div>
+       <div class="box bg-black text-red" id="y">(-x)(y)</div>
+       <div class="box bg-bisque text-blue" id="z">(x)(-y)</div>
+       
+    </div>
+</body>
+</html>
