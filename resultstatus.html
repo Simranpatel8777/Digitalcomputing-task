@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function add(){
+             var a=document.getElementById("n1").value
+             var b=document.getElementById("n2").value
+             var c=document.getElementById("n3").value
+             var d=document.getElementById("n4").value
+             var e=document.getElementById("n5").value
+             var total=parseInt(a)+parseInt(b)+parseInt(c)+parseInt(d)+parseInt(e)
+             var pers=total*100/500
+             document.getElementById("data1").innerHTML= "total marks = " +total
+             document.getElementById("data2").innerHTML= "persentage = " +pers+ "%"
+
+       if(pers>=85){
+                document.getElementById("data3").innerHTML="congrats! you got 1st division with "+pers+ "%"
+                 }
+        else if(pers>=65){
+                document.getElementById("data3").innerHTML="congrats! you got 2nd division with "+pers+ "%"
+                 }
+        else if(pers>=33){
+                document.getElementById("data3").innerHTML="congrats! you got 3rd division with "+pers+ "%"
+                 }
+       else{
+                document.getElementById("data3").innerHTML="sorry! you are fail with "+pers+ "%"
+                 }
+         }
+
+
+    </script>
+    <style>
+        *{margin: 0px; padding: 0%;}
+         h1{background-color: green;}
+        input{margin: 30px; width: 2cm; height:1cm; font-size: 25px;}
+        p{font-size: 32px; text-align: center; margin-top: 10px;}
+        button{background-color: rgb(192, 142, 142); margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <h1>cheack result status</h1>
+    ENGLISH: <input type="text" id="n1">
+    HINDI: <input type="text" id="n2">
+    MATHS: <input type="text" id="n3">
+    SCIENCE: <input type="text" id="n4">
+    SOCIAL SCIENCE: <input type="text" id="n5">
+    <button onclick="add()">result status</button>
+    <p id="data1"></p>
+    <p id="data2"></p>
+    <p id="data3"></p>
+   
+</body>
+</html>
