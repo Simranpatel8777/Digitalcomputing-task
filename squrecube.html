@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cube(){
+           var a=document.getElementById("n1").value
+           var b=parseInt(a)*parseInt(a)*parseInt(a)
+           document.getElementById("data2").innerHTML= "cube is " +b
+        }
+        function squre(){
+           var a=document.getElementById("n1").value
+           var b=parseInt(a)*parseInt(a)
+           document.getElementById("data1").innerHTML= "square is "+b
+        }
+    </script>
+    <style>
+        body{
+            padding: 100px;
+        }
+         div{border: 1px solid black;
+        width: 25%;
+        padding: 10px;
+        margin-left: 37%;
+        }
+       .button1{background-color: rgb(64, 154, 214); width: 70px;}
+       .button2{background-color: rgb(46, 177, 170);  width: 70px;}
+       #data1{color: rgb(0, 35, 58); font-size: 32px;}
+       #data2{color:  rgb(9, 43, 41); font-size: 32px;}
+    </style>
+</head>
+<body>
+    <div>
+    <input type="number" id="n1" placeholder="enter the number">
+    <button onclick="squre()" class="button1">squre</button>
+    <button onclick="cube()" class="button2">cube</button>
+    
+    <p id="data1" ></p>
+    <p id="data2" ></p>
+    </div>
+</body>
+</html>
